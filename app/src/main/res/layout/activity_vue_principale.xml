@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vue_principale"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a.webview.VuePrincipaleActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        app:srcCompat="@drawable/backgroundsky" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/logoapp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:text="Camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bCamera"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:layout_below="@+id/httpStatus"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <Button
+        android:text="Alarme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bCamera"
+        android:layout_alignLeft="@+id/bCamera"
+        android:layout_alignStart="@+id/bCamera"
+        android:id="@+id/bAlarme"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:layout_alignEnd="@+id/bCamera" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bAlarme"
+        android:id="@+id/bData"
+        android:text="DONNEES"
+        android:background="@color/colorAccent"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_alignStart="@+id/bAlarme"
+        android:layout_alignEnd="@+id/bAlarme" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_height="50dp"
+        android:id="@+id/httpStatus"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/switchStatus"
+        android:layout_width="100dp"
+        android:layout_alignEnd="@+id/bCamera" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/labelHttpStatus"
+        android:layout_alignBaseline="@+id/httpStatus"
+        android:layout_alignBottom="@+id/httpStatus"
+        android:layout_alignStart="@+id/bCamera" />
+
+    <Button
+        android:text="Deconnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bDeconnexion"
+        android:background="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:layout_below="@+id/bData"
+        android:layout_marginTop="30dp"
+        android:layout_alignEnd="@+id/bData"
+        android:layout_alignStart="@+id/bData" />
+
+    <Switch
+        android:id="@+id/alarmeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Détection "
+        android:splitTrack="false"
+        android:switchMinWidth="50dp"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
+        android:checked="false"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/switchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="17dp"
+        android:layout_below="@+id/alarmeSwitch"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

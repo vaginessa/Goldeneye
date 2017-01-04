@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GoldenEye</string>
+    <string name="camera">Camera</string>
+    <string name="alarme">Alarmes</string>
+    <string name="data">Données</string>
+    <string name="reglages">Réglages</string>
+    <string name="historique">Historique</string>
+</resources>
